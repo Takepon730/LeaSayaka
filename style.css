@@ -1,0 +1,108 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F5F5DC; /* Beige */
+    color: #556B2F; /* Dark Olive Green */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-section {
+    background-image: url('assets/taitle_back.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    position: relative;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-list-section .feature-icon {
+    font-size: 3rem;
+    color: #8FBC8F; /* Dark Sea Green */
+}
+
+.feature-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.price-list-section {
+    background-color: #FAF0E6; /* Linen */
+}
+
+.price-list-section .list-group-item {
+    background-color: transparent;
+    border-bottom: 1px solid #E0DCD3;
+}
+
+.price-list-section .list-group-item span {
+    color: #8FBC8F;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #8FBC8F;
+    border-color: #8FBC8F;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #709670;
+    border-color: #709670;
+}
+
+.btn-secondary {
+    background-color: #D2B48C; /* Tan */
+    border-color: #D2B48C;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #c1a37b;
+    border-color: #c1a37b;
+}
+
+.contact-section {
+    background-color: #F5F5F5; /* White Smoke */
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #8FBC8F;
+}
+
+footer {
+    background-color: #556B2F;
+    color: white;
+}
